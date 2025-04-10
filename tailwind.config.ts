@@ -64,17 +64,17 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					50: '#f5f2ff',
-					100: '#ede8ff',
-					200: '#ded5ff',
-					300: '#c5b3ff',
-					400: '#aa85ff',
-					500: '#9b66ff',
-					600: '#8a3eff',
-					700: '#7c2eff',
-					800: '#6820e0',
-					900: '#5618b6',
-					950: '#330c73',
+					50: '#f0f9ff',
+					100: '#e0f2fe',
+					200: '#bae6fd',
+					300: '#7dd3fc',
+					400: '#38bdf8',
+					500: '#0ea5e9',
+					600: '#0284c7',
+					700: '#0369a1',
+					800: '#075985',
+					900: '#0c4a6e',
+					950: '#082f49',
 				},
 			},
 			borderRadius: {
@@ -85,18 +85,22 @@ export default {
 			keyframes: {
 				'accordion-down': {
 					from: {
-						height: '0'
+						height: '0',
+						opacity: '0'
 					},
 					to: {
-						height: 'var(--radix-accordion-content-height)'
+						height: 'var(--radix-accordion-content-height)',
+						opacity: '1'
 					}
 				},
 				'accordion-up': {
 					from: {
-						height: 'var(--radix-accordion-content-height)'
+						height: 'var(--radix-accordion-content-height)',
+						opacity: '1'
 					},
 					to: {
-						height: '0'
+						height: '0',
+						opacity: '0'
 					}
 				},
 				'float': {
@@ -111,7 +115,8 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'hero-pattern': 'linear-gradient(120deg, #9b66ff 0%, #6820e0 100%)',
+				'hero-pattern': 'linear-gradient(120deg, #0ea5e9 0%, #075985 100%)',
+				'glass-pattern': 'linear-gradient(120deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
 			}
 		}
 	},

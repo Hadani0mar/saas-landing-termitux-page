@@ -5,8 +5,13 @@ import { ArrowRight, Phone, Mail } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-brand-800 to-brand-900 text-white" dir="rtl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-gradient-to-br from-blue-800 to-blue-900 text-white relative overflow-hidden" dir="rtl">
+      {/* Glass patterns */}
+      <div className="absolute inset-0 pattern-grid opacity-10"></div>
+      <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+      <div className="absolute bottom-10 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{ animationDelay: '3s' }}></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             حلول تقنية متكاملة لتطوير أعمالك
@@ -15,7 +20,7 @@ const CTASection = () => {
             تواصل مع فريقنا المتخصص اليوم للحصول على استشارة مجانية حول أفضل الحلول التقنية لمشروعك
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <Button size="lg" className="bg-white text-brand-900 hover:bg-gray-100 text-lg px-8 group">
+            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 group">
               اتصل بنا
               <Phone className="mr-2 group-hover:animate-bounce" size={20} />
             </Button>
