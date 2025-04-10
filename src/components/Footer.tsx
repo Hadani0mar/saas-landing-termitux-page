@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Github, Facebook, Instagram, Mail, MapPin, Phone, Clock, ShoppingBag } from "lucide-react";
+import { Github, Facebook, Instagram, Mail, MapPin, Phone, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,8 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-4">
-              <ShoppingBag className="h-6 w-6 text-blue-400 ml-2" />
-              <h3 className="text-xl font-bold">سيلا</h3>
+              <div className="font-bold text-2xl tracking-wider text-blue-400">
+                <span className="text-3xl font-extrabold">S</span>
+                <span className="text-2xl font-bold tracking-tight">I</span>
+                <span className="text-2xl font-bold tracking-tight">L</span>
+                <span className="text-3xl font-extrabold">A</span>
+                <span className="text-xs align-super">®</span>
+              </div>
             </div>
             <p className="text-gray-400 mb-4">
               رائدة في مجال تقنية المعلومات وبيع أجهزة الكمبيوتر والأجهزة الذكية في مصراتة. نقدم حلول متكاملة للشركات والأفراد.
@@ -91,9 +96,27 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 pt-8">
-          <p className="text-center text-gray-500">
-            © {new Date().getFullYear()} سيلا لتقنية المعلومات. جميع الحقوق محفوظة
-          </p>
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
+            <div className="flex items-center mb-4 md:mb-0">
+              <div className="font-bold text-xl tracking-wider text-blue-400 ml-2">
+                <span className="text-2xl font-extrabold">S</span>
+                <span className="text-xl font-bold tracking-tight">I</span>
+                <span className="text-xl font-bold tracking-tight">L</span>
+                <span className="text-2xl font-extrabold">A</span>
+                <span className="text-xs align-super">®</span>
+              </div>
+              <p className="text-gray-500">
+                © {new Date().getFullYear()} سيلا لتقنية المعلومات. جميع الحقوق محفوظة
+              </p>
+            </div>
+            <div className="mt-2 md:mt-0">
+              <img 
+                src="/public/lovable-uploads/f95abc19-be7c-4aed-b812-d09050917630.png" 
+                alt="شعار سيلا" 
+                className="h-8 w-auto" 
+              />
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sun, Moon, Monitor, ShoppingBag } from "lucide-react";
+import { Menu, X, Sun, Moon, Monitor } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,10 +57,13 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <a href="#" className="flex items-center">
-                <ShoppingBag className="h-8 w-8 text-brand-600 dark:text-brand-400 mr-2" />
-                <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-brand-700 dark:from-brand-400 dark:to-brand-500">
-                  سيلا
-                </span>
+                <div className="font-bold text-2xl tracking-wider text-brand-600 dark:text-brand-400">
+                  <span className="text-3xl font-extrabold">S</span>
+                  <span className="text-2xl font-bold tracking-tight">I</span>
+                  <span className="text-2xl font-bold tracking-tight">L</span>
+                  <span className="text-3xl font-extrabold">A</span>
+                  <span className="text-xs align-super">®</span>
+                </div>
               </a>
             </div>
           </div>
