@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
@@ -9,7 +9,7 @@ import Terminal from "@/components/Terminal";
 import { toast } from "@/hooks/use-toast";
 
 const Index = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     // Welcome toast when the page loads
     toast({
       title: "مرحبًا بك في سيلا",
@@ -18,7 +18,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white dark:bg-gray-900 font-cairo">
       <Navbar />
       <main>
         <HeroSection />
