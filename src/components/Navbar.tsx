@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Monitor, ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,8 +17,9 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <a href="#" className="flex items-center">
+                <ShoppingBag className="h-8 w-8 text-brand-600 mr-2" />
                 <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-brand-700">
-                  TermiSaaS
+                  سيلا
                 </span>
               </a>
             </div>
@@ -29,7 +30,7 @@ const Navbar = () => {
                 href="#features"
                 className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-brand-600"
               >
-                الميزات
+                منتجاتنا
               </a>
               <a
                 href="#pricing"
@@ -38,12 +39,12 @@ const Navbar = () => {
                 الأسعار
               </a>
               <a
-                href="#testimonials"
+                href="#"
                 className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-brand-600"
               >
-                آراء العملاء
+                حول الشركة
               </a>
-              <Button className="btn-gradient">ابدأ الآن</Button>
+              <Button className="btn-gradient">تواصل معنا</Button>
             </div>
           </div>
           <div className="md:hidden">
@@ -65,7 +66,7 @@ const Navbar = () => {
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-600 text-right"
               onClick={toggleMenu}
             >
-              الميزات
+              منتجاتنا
             </a>
             <a
               href="#pricing"
@@ -75,14 +76,14 @@ const Navbar = () => {
               الأسعار
             </a>
             <a
-              href="#testimonials"
+              href="#"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-600 text-right"
               onClick={toggleMenu}
             >
-              آراء العملاء
+              حول الشركة
             </a>
             <div className="px-3 py-2">
-              <Button className="w-full btn-gradient">ابدأ الآن</Button>
+              <Button className="w-full btn-gradient">تواصل معنا</Button>
             </div>
           </div>
         </div>

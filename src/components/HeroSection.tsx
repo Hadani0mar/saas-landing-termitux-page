@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Laptop, Smartphone, Monitor, ShoppingBag } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -14,42 +14,44 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-right">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 heading-gradient">
-              حول Termux الى أداة قوية للإنتاجية
+              تقنية متطورة لمستقبل أعمالك
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto lg:mr-0">
-              منصة متكاملة تمكنك من إدارة وتخصيص تجربة Termux بكفاءة عالية، مع مجموعة من الأدوات المتطورة للمطورين والمستخدمين المتقدمين.
+              سيلا، رائدة في حلول التكنولوجيا المتكاملة وأنظمة نقاط البيع المتطورة في مصراتة. نقدم أجهزة كمبيوتر ذات جودة عالية وحلول ذكية لكافة الأعمال.
             </p>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-end">
               <Button size="lg" className="btn-gradient text-lg px-8">
-                جرب مجاناً
+                تواصل معنا
                 <ArrowRight className="mr-2" size={20} />
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 border-brand-300 text-brand-700 hover:bg-brand-50">
-                اكتشف المزيد
+                منتجاتنا
               </Button>
             </div>
           </div>
           <div className="flex-1 relative">
             <div className="relative bg-white shadow-xl rounded-2xl border border-gray-100 p-4 w-full max-w-lg mx-auto">
-              <div className="bg-gray-900 rounded-lg overflow-hidden">
-                <div className="flex items-center bg-gray-800 px-4 py-2">
-                  <div className="flex space-x-2 rtl:space-x-reverse">
-                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  </div>
-                  <div className="mx-auto text-gray-300 text-sm">Termux</div>
+              <div className="flex items-center justify-around p-6">
+                <div className="text-center">
+                  <Laptop className="h-16 w-16 text-brand-500 mx-auto mb-2" />
+                  <span className="text-sm font-medium text-gray-600">أجهزة محمولة</span>
                 </div>
-                <div className="p-4 font-mono text-sm text-green-400 bg-black h-64 overflow-hidden">
-                  <p>$ <span className="typing-animation">termisaas --install</span></p>
-                  <p className="mt-2">Installing TermiSaaS plugin...</p>
-                  <p className="mt-1">[####################] 100%</p>
-                  <p className="mt-2">Setup complete!</p>
-                  <p className="mt-1">$ <span className="typing-animation">termisaas --start</span></p>
-                  <p className="mt-2">Starting TermiSaaS service...</p>
-                  <p className="mt-1">TermiSaaS is running on http://localhost:8080</p>
-                  <p className="mt-2 text-brand-400">Welcome to TermiSaaS - Enjoy the power!</p>
+                <div className="text-center">
+                  <Monitor className="h-16 w-16 text-brand-600 mx-auto mb-2" />
+                  <span className="text-sm font-medium text-gray-600">شاشات</span>
                 </div>
+                <div className="text-center">
+                  <Smartphone className="h-16 w-16 text-brand-700 mx-auto mb-2" />
+                  <span className="text-sm font-medium text-gray-600">هواتف ذكية</span>
+                </div>
+                <div className="text-center">
+                  <ShoppingBag className="h-16 w-16 text-brand-800 mx-auto mb-2" />
+                  <span className="text-sm font-medium text-gray-600">نظم المبيعات</span>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-brand-50 to-brand-100 rounded-lg p-6">
+                <h3 className="text-center text-xl font-bold text-brand-800 mb-2">نظام نقاط البيع المتكامل</h3>
+                <p className="text-center text-gray-700">أحدث تقنيات إدارة المبيعات والمخزون لتطوير أعمالك</p>
               </div>
             </div>
           </div>

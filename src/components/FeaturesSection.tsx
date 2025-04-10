@@ -1,48 +1,48 @@
 
 import React from "react";
-import { Terminal, Shield, Zap, Package, Settings, Code, Smartphone, Lock } from "lucide-react";
+import { Monitor, ShieldCheck, Zap, ShoppingCart, Settings, Smartphone, Cpu, Database } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
-    icon: <Terminal className="h-10 w-10 text-brand-500" />,
-    title: "واجهة مستخدم متقدمة",
-    description: "واجهة سهلة الاستخدام تمكنك من إدارة مشاريعك وأدواتك بكفاءة عالية.",
+    icon: <Monitor className="h-10 w-10 text-brand-500" />,
+    title: "أجهزة حاسوب متطورة",
+    description: "أحدث أجهزة الكمبيوتر وملحقاتها بأفضل الأسعار وبضمان شركة سيلا.",
   },
   {
-    icon: <Package className="h-10 w-10 text-brand-500" />,
-    title: "إدارة الحزم",
-    description: "تثبيت وإدارة حزم البرامج بسهولة وبدون تعقيدات تقنية.",
+    icon: <ShoppingCart className="h-10 w-10 text-brand-500" />,
+    title: "نظم نقاط البيع",
+    description: "نظام متكامل لإدارة المبيعات والمخزون مع تقارير مفصلة لأداء العمل.",
   },
   {
-    icon: <Shield className="h-10 w-10 text-brand-500" />,
-    title: "حماية متطورة",
-    description: "تشفير متقدم وحماية لبياناتك مع نظام أذونات ذكي.",
-  },
-  {
-    icon: <Code className="h-10 w-10 text-brand-500" />,
-    title: "محرر أكواد مدمج",
-    description: "محرر متطور يدعم العديد من لغات البرمجة مع تلوين نحوي ذكي.",
-  },
-  {
-    icon: <Zap className="h-10 w-10 text-brand-500" />,
-    title: "أداء عالي",
-    description: "محسن للأداء على جميع الأجهزة حتى ذات المواصفات المنخفضة.",
+    icon: <ShieldCheck className="h-10 w-10 text-brand-500" />,
+    title: "ضمان شامل",
+    description: "ضمان لمدة عامين على جميع منتجاتنا مع خدمة ما بعد البيع المتميزة.",
   },
   {
     icon: <Smartphone className="h-10 w-10 text-brand-500" />,
-    title: "متوافق مع الأجهزة المحمولة",
-    description: "يعمل بكفاءة على جميع أجهزة الأندرويد مع دعم خاص لتطبيق Termux.",
+    title: "الأجهزة الذكية",
+    description: "مجموعة واسعة من الهواتف والأجهزة اللوحية من أشهر العلامات التجارية.",
+  },
+  {
+    icon: <Cpu className="h-10 w-10 text-brand-500" />,
+    title: "قطع غيار أصلية",
+    description: "توفير قطع الغيار الأصلية لجميع الأجهزة والمكونات الإلكترونية.",
+  },
+  {
+    icon: <Zap className="h-10 w-10 text-brand-500" />,
+    title: "دعم فني سريع",
+    description: "فريق دعم فني محترف جاهز لمساعدتك في حل أي مشكلة تقنية على مدار الساعة.",
+  },
+  {
+    icon: <Database className="h-10 w-10 text-brand-500" />,
+    title: "استضافة وخدمات سحابية",
+    description: "خدمات استضافة موثوقة وحلول سحابية مصممة خصيصًا لاحتياجات عملك.",
   },
   {
     icon: <Settings className="h-10 w-10 text-brand-500" />,
-    title: "قابلية تخصيص عالية",
-    description: "خصص كل جانب من جوانب التطبيق ليناسب احتياجاتك الخاصة.",
-  },
-  {
-    icon: <Lock className="h-10 w-10 text-brand-500" />,
-    title: "تحكم بالأذونات",
-    description: "نظام أذونات متقدم لإدارة الوصول إلى الموارد والأدوات.",
+    title: "تخصيص الأنظمة",
+    description: "تصميم وتخصيص أنظمة المبيعات والإدارة لتناسب متطلبات عملك الفريدة.",
   },
 ];
 
@@ -52,10 +52,10 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 heading-gradient">
-            مميزات قوية لتجربة Termux متطورة
+            منتجات وخدمات عالية الجودة
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            صمم خصيصاً لتحسين إنتاجيتك وتبسيط سير عملك مع واجهة سهلة الاستخدام
+            نوفر لك مجموعة متكاملة من الأجهزة الذكية وحلول تقنية المعلومات لتطوير أعمالك
           </p>
         </div>
 
